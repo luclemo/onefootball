@@ -1,0 +1,758 @@
+/* Imports normalize, border-box, clearfix
+-------------------------------------------*/
+@import url(reset.css);
+
+/* Imports google fonts
+-------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300|Raleway:400,600,300,700);
+
+/*
+=============================================
+Deafults
+=============================================
+*/
+
+/* Remove default top margins*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 1rem;
+}
+
+p {margin-top: 0}
+
+/* Remove defaults on list*/
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+	a:hover {
+		transition: all 0.1s ease-in-out;
+	}
+
+/*
+=============================================
+Typography
+=============================================
+*/
+html {
+	font-size: 10px;
+}
+
+body {
+	background: rgba(225, 230, 234, 1);
+	color: rgba(110, 131, 149, 1);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.67;
+}
+
+p {
+	font-size: 1.8rem;
+	font-weight: 300;
+	letter-spacing: 0.02rem;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h4,
+h5 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 8rem;
+	font-weight: 400;	
+}
+
+h2 {
+	font-size: 4.8rem;
+	font-weight: 600;	
+}
+
+h3 {
+	font-size: 4rem;
+	font-weight: 600;	
+}
+
+h4 {
+	font-size: 2.4rem;
+}
+
+/* Section Headers
+------------------------- */
+h2.section-header {
+	color: rgba(50, 184, 71, 1.0);
+	margin-bottom: 0rem;
+}
+
+.download header,
+.press header,
+.contact header,
+.careers header {
+	margin-bottom: 60px;
+}
+/*
+=============================================
+Layout
+=============================================
+*/
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 1.0);
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+header.header {
+	padding: 40px 0;
+}
+footer.footer,
+section:not(.media) {
+padding: 80px 0 160px 0;
+}
+
+.media img {
+	display: block;
+}
+
+/* Grid helpers
+-------------------------------*/
+.col-20,
+.col-30,
+.col-50,
+.col-70 {
+	float: left;
+}
+.col-20 {
+	width: 20%;
+}
+.col-30 {
+	width: 30%;
+}
+.col-50 {
+	width: 50%;
+}
+.col-70 {
+	width: 70%;
+}
+
+/*
+=============================================
+Buttons
+=============================================
+*/
+
+.btn {
+	text-align: center;
+	padding: 1.8rem 3rem;
+	border: 1px solid;
+	border-radius: 5px;
+	max-width: 280px;
+	min-width: 280px;
+	display: block;
+}
+
+.btn-main {
+	background: rgba(50, 184, 71, 1.0);
+	border-color: rgba(50, 184, 71, 1.0);
+	color: rgba(255,255,255,1);
+}
+
+	.btn-main:hover {
+		background: rgba(63, 155, 66, 1.0);
+	}
+
+.btn-cta {
+	background: rgba(255,255,255,1);
+	color: rgba(110, 131, 149, 1);
+	border-color: rgba(255,255,255,1);
+}
+
+.btn-secondary {
+	color: rgba(255,255,255,1);
+}
+
+	.btn-secondary:hover {
+		background: rgba(255,255,255,0.3);
+		border-color: rgba(255,255,255,0.5)
+	}
+
+/*
+=============================================
+Header
+=============================================
+*/
+
+/* Nav
+------------------------- */
+.main-nav {
+	margin: 4.5rem auto 14rem auto;
+}
+
+	.logo {
+		float: left;
+		display: block;
+		padding-left: 1%;
+	}
+	/*
+	crazy code to fix space
+	at bottom of img */
+	.logo img {
+		display: block;
+		font-size: 0;
+		line-height: 0.8em;
+	}
+
+	.menu {
+		display: block;
+		float: right;
+	}
+
+		.menu li {
+			display: inline;
+		}
+
+		.menu li a {
+			font-family: 'Raleway', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			text-decoration: none;
+			color: #fff;
+			padding: 16px;
+			display: inline-block;
+		}
+
+		.menu li a:hover {
+			color: rgba(179, 255, 0, 1.0);
+		}
+
+		.menu li a:last-child {
+			padding-right: 0;
+		}
+
+/* Header .hero (home)
+------------------------- */ 
+header.hero {
+	color: #fff;
+	background: rgba(50, 184, 71, 1.0) url('../images/back-header.png') no-repeat 90px bottom;
+	padding-bottom: 560px;
+	position: relative;
+}
+
+.hero .site-title {
+	font-size: 12rem;
+	line-height: 0.8;
+	font-weight: 600;
+	margin-bottom: 6rem;
+}
+
+	.hero .site-title em {
+		font-style: normal;
+		color: rgba(179, 255, 0, 1.0);
+		display: block;
+	}
+
+.hero .tagline {
+	max-width: 84%;
+	margin-bottom: 6rem;
+}
+
+.hero .btn {
+	display: inline-block;
+}
+
+.hero .btn-secondary {
+	margin-right: 20px;
+}
+
+/* Header .header-careers
+(careers page)
+------------------------- */
+.header-careers {
+	height: 933px;
+	background: rgba(50, 184, 71, 1.0) url('../images/back-header-careers.jpg') no-repeat;
+	color: #fff;
+}
+
+/* Header .header-contact
+(contact page)
+------------------------- */
+.header-contact {
+	height: 527px;
+	background: rgba(50, 184, 71, 1.0) url('../images/back-header-contact.jpg') no-repeat;
+	color: #fff;
+}
+
+/* Hero Badge (Home)
+------------------------- */
+/*
+The next two rules work for centering,
+but I got there through random googling,
+not logic...
+*/
+.hero .badge {
+	background: rgba(179, 255, 0, 1.0);
+	text-align: center;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	box-shadow: 6px 5px 1px rgba(0,0,0,0.1);
+	position: absolute;
+	right: 6%;
+	display: table;
+}
+	.hero .badge a {
+		color: rgba(50, 60, 70, 1);
+		font-size: 1.3rem;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		width: 100%;
+		position: absolute;
+		display: block;
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
+	.hero .badge span {
+		display: block;
+	}
+	.hero .badge span.line-1 {
+		text-transform: none;
+		
+	}
+	.hero .badge span.line-2 {
+		font-size: 3rem;
+		line-height: 1;
+		font-weight: 400;
+	}
+
+/*
+=============================================
+Features Section
+=============================================
+*/
+
+/* Tabbed nav
+------------------------------------*/
+.features .tabbed-nav {
+	border: 1px solid rgba(225, 230, 234, 1);
+	border-radius: 5px;
+	display: inline-block;
+	float: right;
+	margin-top: 4rem;
+}
+
+.features .tabbed-nav li {
+	display: inline-block;
+	float: left;
+	font-size: 0;
+}
+
+.features .tabbed-nav li a {
+	font-size: 1.8rem;
+	text-align: center;
+	border-right: 1px solid rgba(225, 230, 234, 1);
+	min-width: 190px;
+	padding: 2rem 4rem;
+	display: block;
+}
+	.features .tabbed-nav li:last-child a {
+		border: none;
+	}
+
+/*	.features .tabbed-nav li a:hover {
+		color: rgba(50, 184, 71, 1.0);
+	}*/
+
+	.active-state {
+		color : white;
+		background : rgba(50, 184, 71, 1.0);
+	}
+
+/* Features
+------------------------------------*/
+section.features {
+	padding-bottom: 0;
+}
+
+.features .container {
+	padding-bottom: 90px;
+}
+
+/* Each Feature
+------------------------------------*/
+.feature {
+	height: 700px;
+	position: relative;
+}
+	/* Wanted to use "odd" but it only works on "even"!*/
+.feature:nth-of-type(2n)  {
+		background-color: rgba(241, 244, 247, 1);
+	}
+
+/* next 3 rules = large bg images */
+.news {
+	background: url(../images/back-news-ios.png);
+	background-repeat: no-repeat;
+	background-position: left; 
+}
+
+.matches {
+	background: url(../images/back-matches-ios.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+.browse {
+	background: url(../images/back-browse-ios.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* Feature blurb
+-----------------------------------*/
+.feature .feature-blurb {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right:10%;
+}
+/* Every other blurb sits on left*/
+.feature:nth-of-type(2n+1) .feature-blurb {
+	left: 10%;
+}
+
+.feature-blurb h2 {
+	line-height: 1;
+	color: rgba(49, 60, 69, 1);
+}
+
+.feature-blurb p {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+/* Feature icons
+-----------------------------------*/
+.featured-icon {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background: rgba(50, 184, 71, 1.0);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 35%;
+}
+	/* 
+	Thanks to Haris for the help positioning
+	the icon inside its parent div!
+	*/
+	.featured-icon .icon {
+		height: 80px;
+		width: 80px;
+		display: inline-block;
+		margin-top: 50%;
+		margin-left: 50%;
+		transform: translate(-50%, -50%);
+		background: rgba(50, 184, 71, 1.0)  url(../images/icons-circle.png) /*no-repeat 0px center*/;
+	}
+
+/* Every other icon sits on left*/
+.feature:nth-child(odd) .featured-icon {
+	left: 35%;
+}
+
+/*
+=============================================
+Dowload Section
+=============================================
+*/
+
+.download-links li {
+	display: inline-block;
+	float: left;
+	width: 25%;
+}
+
+.download-links li a {
+	display: block;
+}
+	.download-links li h4 {
+		color: rgba(49, 60, 69, 1);
+	}
+
+.download-links li a:before {
+	content:'';
+	width: 100px;
+	height: 100px;
+	background: #fff url(../images/icons-download.png) no-repeat;
+	top: 0;
+	left: 0;
+	display: block;	
+}
+	.download-links li a.google:before {
+		background-position: -100px;
+	}
+	.download-links li a.windows-phone:before {
+		background-position: -200px;
+	}
+	.download-links li a.windows-store:before {
+		background-position: -300px;
+	}
+
+.download-links li h4,
+.download-links li p {
+	margin:0;
+}
+
+/*
+=============================================
+Press Section
+=============================================
+*/
+
+.press .btn {
+	margin: 0 auto;
+}
+
+/* Press logos
+---------------------------------------------*/
+.press-logo {
+	width: 204px;
+	height: 100px;
+	display: inline-block;
+	float: left;
+	background: url('../images/icons-press.png') no-repeat;
+	position: relative;
+}
+
+/*Positioning the press logos in their divs*/
+.pl-1 {
+	background-position: -1200px top;
+}
+.pl-2 {
+	background-position: -200px top;
+}
+.pl-3 {
+	background-position: -405px top;
+}
+.pl-4 {
+	background-position: -600px top;
+}
+.pl-5 {
+	background-position: -800px top;
+}
+.pl-6 {
+	background-position: -1000px top;
+}
+
+/* Little triangle beneath the
+logos (hidden by default) */
+.press-logo:after {
+	content: url('../images/arrow-up.png');
+	position: absolute;
+	bottom: -48px;
+	left: 50px;
+	display: none;
+}
+	/* Show little triangle on hover*/
+	.press-logo:hover:after {
+		display: block;
+	}
+
+/* Quotes
+---------------------------------------*/
+.press-quote-block {
+	background: rgba(225, 230, 234, 1);
+	padding: 80px 60px;
+	margin: 40px 0;
+}
+
+.press-quote {
+	font-size: 2.2rem;
+	color: rgba(49, 60, 69, 1);
+	font-weight: 400;
+	display: none;
+}
+
+.pq-1 {
+	display: block;
+}
+
+.press-quote time {
+	color: rgba(50, 184, 71, 1.0);
+}
+	.press-quote time:before {
+		content: '—';
+		margin: 0 10px;
+	}
+
+/*//////////////////////////////////////////
+Trying to reveal the quotes when I hover the icons.
+It doesn't work. I think I need JS.
+//////////////////////////////////////////*/
+.press-logo:hover blockquote .pq-2 {
+	display: block;
+}
+
+/*
+=============================================
+Careers Section
+=============================================
+*/
+
+section.careers {
+	padding: 60px 0;
+}
+
+	.careers header {
+		width: 60%;
+	}
+
+.job {
+	background: rgba(241, 244, 247, 1);
+	margin: 0 auto;
+	padding: 50px 7.5%;
+	display: block;
+	position: relative;
+}
+
+.job:hover {
+	background: rgba(179, 255, 0, 1.0);
+}
+
+.job-description {
+	font-size: 1.6rem;
+	padding-top: 2.8rem;
+	font-weight: 400;
+}
+/*//////////////////////////////////////////
+Can't figure out the positioning of the
+arrow for this span. I put it on display:none
+for now.
+//////////////////////////////////////////*/
+
+.job-learn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: red;
+	display: table;
+	height: 70px;	
+	display: none;
+}
+
+	.job-learn:after {
+		content:'';
+		width: 70px;
+		height: 70px;
+		background: url('../images/icon-arrow.png') no-repeat;
+		display: table-cell;
+		vertical-align: text-top;
+	}
+
+/*
+=============================================
+Media Section
+=============================================
+*/
+
+.made-by {
+	padding: 80px 0;
+}
+.made-by img {
+	margin: 0 auto;
+}
+
+.media iframe {
+	display: block;
+	
+}
+
+/*
+=============================================
+Contact Section
+=============================================
+*/
+.contact header {
+	width: 60%;
+}
+.contact p {
+		font-weight: 400;
+}
+.contact-list {
+	margin-bottom: 60px;
+}
+.contact-list a {
+	color: rgba(50, 184, 71, 1.0);
+}
+/*
+=============================================
+Footer Section
+=============================================
+*/
+
+footer.footer {
+	background: rgba(86, 114, 134, 1);
+}
+
+footer.footer,
+.footer .copyright,
+.footer .credit p {
+	font-size: 1.5rem;
+}
+
+footer.footer {
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 0.02rem;
+}
+
+.footer .fg-3,
+.footer .credit {
+	margin-top: 50px;
+}
+
+form input[type=email],
+form input[type=submit] {
+	background: rgba(255,255,255,0.2);
+	border: none;
+	padding: 2rem;
+	float: left;
+	color:#fff;
+}
+
+form ::-webkit-input-placeholder {
+	color: #fff;
+}
