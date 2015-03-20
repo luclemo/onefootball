@@ -1,11 +1,16 @@
 $(function() {
-
+	
+	// ==================================
+	// Tabbed buttons in features section
+	// ==================================
+	
+	// caching buttons and sections
 	var news = $('.news');
 	var matches = $('.matches');
 	var browse = $('.browse');
 	var btn = $('.tab-btn');
 
-
+	// ios buttons & backgrounds
 	$('a.ios').on('click', function(e){
 		e.preventDefault();
 		btn.removeClass('active-state');
@@ -15,6 +20,7 @@ $(function() {
 		browse.css('background-image', 'url(images/back-browse-ios.png)');
 	});
 
+	// android buttons & backgrounds
 	$('a.android').on('click', function(e){
 		e.preventDefault();
 		btn.removeClass('active-state');
@@ -24,6 +30,7 @@ $(function() {
 		browse.css('background-image', 'url(images/back-browse-and.png)');
 	});
 
+	// windows buttons & backgrounds
 	$('a.windows').on('click', function(e){
 		e.preventDefault();
 		btn.removeClass('active-state');
@@ -33,4 +40,11 @@ $(function() {
 		browse.css('background-image', 'url(images/back-browse-win.png)');
 	});
 
-});
+	// ==================================
+	// Press Section
+	// ==================================
+
+	
+
+
+}); // end jQuery
