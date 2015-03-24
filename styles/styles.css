@@ -756,3 +756,16 @@ form input[type=submit] {
 form ::-webkit-input-placeholder {
 	color: #fff;
 }
+
+/*
+=============================================
+Media Queries
+=============================================
+*/
+@media screen and (max-width: 980px) {
+	
+	header.hero {
+		background-image: none;
+	}
+
+}
